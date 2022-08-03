@@ -1,12 +1,11 @@
-import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
-
+import { Controller, Post } from '@nestjs/common';
+import { execa } from 'execa';
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
-
-  @Get()
-  getHello(): string {
-    return this.appService.getHello();
+  // constructor(private readonly appService: AppService) {}
+  @Post('hook')
+  async hook() {
+    // const { stdout } = await execa('git', ['pull']);
+    // return stdout;
   }
 }
