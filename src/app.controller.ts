@@ -1,12 +1,12 @@
 import { Controller, Post } from '@nestjs/common';
-import { exec } from 'child_process';
+import { execCmd } from './utils';
 
 @Controller()
 export class AppController {
   // constructor(private readonly appService: AppService) {}
   @Post('hook')
   async hook() {
-    await exec('git pull');
+    await execCmd('git pull');
     console.log('pull done');
   }
 }
