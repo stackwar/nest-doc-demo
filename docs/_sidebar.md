@@ -1,4 +1,6 @@
 <!-- docs/_sidebar.md -->
 
-- [Home](/)
-- [Guide](guide.md 'The greatest guide in the world')
+- [快速开始](/)
+- [utils](utils.md)
+- [hooks](hooks.md)
+- [jsbridge](jsbridge.md)
