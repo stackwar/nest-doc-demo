@@ -7,6 +7,6 @@ export class AppController {
   @Post('hook')
   async hook(@Body() body, @Param() param) {
     await execCmd('git pull');
-    console.log(body, param, 'pull done');
+    console.log(body, param['ref'], 'pull done');
   }
 }
