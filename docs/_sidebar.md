@@ -1,6 +1,7 @@
 <!-- docs/_sidebar.md -->
 
-- [快速开始](/)
+- [quick-start](/)
 - [utils](utils.md)
 - [hooks](hooks.md)
 - [jsbridge](jsbridge.md)
+- [middleware](middleware.md)
