@@ -1,1 +1,1 @@
-`wycommon doc service`
+`common doc service`
